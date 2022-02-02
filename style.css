@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+body{
+
+  
+  font-family: 'Roboto', sans-serif;
+ 
+    
+    
+}
+
+
+
+
+/*----------------div CONTAINER------------------*/
+
+
+   
+
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.design span{
+    color: maroon;
+}
+
+/*----------------div WRAPPER------------------*/
+
+.wrapper{
+    box-shadow:0 0 20px 0 black;
+}
+.wrapper > *{
+    padding: 1em;
+}
+.pupform{
+    background: maroon;
+    color: white;
+}
+.pupform h3, .pupform ul{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/*----------------div INFO------------------*/
+.info{
+    background: white;
+}
+
+/*----------------FORM DESIGN------------------*/
+
+.info form .custom-select select{
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    gap: 20px;
+}
+
+    
+
+.info label {
+    display: block;
+}
+.info label p{
+    margin: 0;
+
+}
+
+.info form button, .info form input,.custom-select select{
+    width: 100%;
+    padding: 1em;
+    border: 1px solid maroon;
+}
+.info form button{
+    background: maroon;
+    color: white;
+    border: 0;
+    text-transform: uppercase;
+}
+.info form button:hover{
+    color: black;
+    background:khaki;
+    outline: 0;
+    transition: background-color 0.3s ease-out;
+}
+/*------DESKTOP SCREEN---*/
+
+@media(min-width:900px){
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .wrapper{
+        padding: 2em;
+    }
+    .pupform h3, .pupform ul, .design{
+        text-align: left;
+    }
+}
+
+
+
+
+
+/*-----QRCODE.javascript--------*/
+.qrcd{
+    display: grid;
+    
+    
+}
+.qrcd h4{
+    font-weight: 700;
+    font-style: oblique;
+    color:maroon;
+    text-align: center;
+}
+.qrcd button{
+    margin-top: 5%;
+    border: 0.5px solid maroon;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+.qrcd button:hover{
+    color:white;
+    background: maroon;
+}
+.canva{
+    
+    display: flex;
+    align-items:  center;
+    justify-content: space-evenly;
+}
